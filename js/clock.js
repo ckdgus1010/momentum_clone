@@ -7,4 +7,6 @@ function showCurrentTime() {
 }
 
 const clockEl  = document.querySelector("#clock");
+
+showCurrentTime();
 setInterval(showCurrentTime, 1000);
