@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>momentum_clone</title>
 </head>
 <body>
@@ -10,7 +11,19 @@
         <div>
             <span id="clock"></span>
         </div>
+        <div>
+            <form id="login-form">
+                <h1>Hello! What's your name?</h1>
+                <input type="text" name="username" required/>
+                <p>Please enter your first name or the name you prefer to be called.</p>
+                <button type="submit">Continue</button>
+            </form>
+            <div>
+                <h1 class="hidden" id="greeting"></h1>
+            </div>
+        </div>
     </main>
     <script src="./js/clock.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>
