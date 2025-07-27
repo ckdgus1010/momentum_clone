@@ -11,9 +11,9 @@ function showUsername(username) {
     const greeting = document.querySelector("#greeting");
     
     greeting.innerText = `Hello! ${username}`;
-    greeting.classList.remove(CLASS_HIDDEN);
+    greeting.parentElement.classList.remove(CLASS_HIDDEN);
 
-    loginForm.classList.add(CLASS_HIDDEN);
+    loginForm.parentElement.classList.add(CLASS_HIDDEN);
 }
 
 const CLASS_HIDDEN = "hidden";
@@ -27,4 +27,5 @@ if (username) {
     showUsername(username);
 } else {
     loginForm.addEventListener("submit", login);
+    loginForm.username.focus();
 }

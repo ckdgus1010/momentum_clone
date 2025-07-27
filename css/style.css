@@ -6,6 +6,81 @@ body {
     margin: 0;
 }
 
+.group {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .hidden {
     display: none;
+}
+
+#login-form {
+    border: solid 2px #fff;
+    border-radius: 25px;
+    backdrop-filter: blur(40px);
+    margin: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#login-form h1 {
+    font-size: 3rem;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px #666;
+}
+
+#login-form input[type=text] {
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px #fff;
+}
+
+#login-form input[type=text]:focus {
+    outline: none;
+    border: none;
+    border-bottom: solid 2px #fff;
+    text-shadow: 1px 1px 2px #666;
+}
+
+#login-form p {
+    margin-top: 20px;
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px #666;
+}
+
+#login-form button[type=submit] {
+    width: 140px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px #666;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: solid 2px;
+    border-radius: 25px;
+}
+
+#login-form button[type=submit]:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#login-form button[type=submit]:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.6);
 }
