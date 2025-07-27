@@ -25,8 +25,11 @@ function draw(todo) {
     span.innerText = todo.content;
 
     const deleteBtn = document.createElement("button");
-    deleteBtn.innerText = "❌";
     deleteBtn.addEventListener("click", deleteTodo);
+
+    const deleteImg = document.createElement("img");
+    deleteImg.src = "./img/delete.svg";
+    deleteBtn.appendChild(deleteImg);
 
     const li = document.createElement("li");
     li.id = todo.id;
@@ -38,7 +41,7 @@ function draw(todo) {
 }
 
 function deleteTodo(event) {
-    const parentEl = event.target.parentElement;
+    const parentEl = event.target.parentElement.parentElement;
     parentEl.remove();
 
     todos = todos.filter((todo) => todo.id !== parseInt(parentEl.id));

@@ -9,9 +9,10 @@ function login(event) {
 
 function showUsername(username) {
     const greeting = document.querySelector("#greeting");
-    
     greeting.innerText = `Hello! ${username}`;
-    greeting.parentElement.classList.remove(CLASS_HIDDEN);
+    
+    const mainContainer = document.querySelector("#main-container");
+    mainContainer.classList.remove(CLASS_HIDDEN);
 
     loginForm.parentElement.classList.add(CLASS_HIDDEN);
 }

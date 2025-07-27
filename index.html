@@ -11,7 +11,7 @@
 <body>
     <main>
         <div class="group">
-            <form id="login-form">
+            <form class="container" id="login-form">
                 <h1>Hello! What's your name?</h1>
                 <input type="text" name="username" required />
                 <p>Please enter your first name or the name you prefer to be called.</p>
@@ -19,19 +19,16 @@
             </form>
         </div>
         <div class="group hidden" id="main-container">
-            <h1 id="greeting"></h1>
-            <div>
-                <div>
-                    <span id="clock"></span>
-                </div>
+            <div class="container">
+                <span id="clock"></span>
+                <h1 id="greeting"></h1>
                 <form id="todo-form">
-                    <input type="text" name="todo" required />
-                    <button type="submit">enroll</button>
+                    <label for="todo-input">What do you have to do today?</label>
+                    <input type="text" name="todo" id="todo-input" maxlength="40" required />
+                    <button type="submit" class="hidden">enroll</button>
                 </form>
-                <div>
-                    <ul id="todo-list">
-                    </ul>
-                </div>
+                <ul id="todo-list">
+                </ul>
             </div>
         </div>
     </main>
