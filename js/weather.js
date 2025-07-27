@@ -10,7 +10,7 @@ async function onSuccess(currentPos) {
     if (response.status === 200) {
         const data = await response.json();
 
-        imgEl.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+        imgEl.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
         tempEl.innerText = `${data.main.temp}℃`;
         locationEl.innerText = data.name;
 
