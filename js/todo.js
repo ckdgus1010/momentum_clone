@@ -41,7 +41,7 @@ function draw(todo) {
 }
 
 function deleteTodo(event) {
-    const parentEl = event.target.parentElement.parentElement;
+    const parentEl = event.target.parentElement;
     parentEl.remove();
 
     todos = todos.filter((todo) => todo.id !== parseInt(parentEl.id));

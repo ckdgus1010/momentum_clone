@@ -132,3 +132,7 @@ body {
 #todo-list button:hover {
     cursor: pointer;
 }
+
+#todo-list button img {
+    pointer-events: none;
+}
