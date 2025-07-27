@@ -9,11 +9,14 @@
 </head>
 
 <body>
+    <header>
+        <button class="hidden" id="change-name-btn">change name</button>
+    </header>
     <main>
         <div class="group">
             <form class="container" id="login-form">
                 <h1>Hello! What's your name?</h1>
-                <input type="text" name="username" required />
+                <input type="text" name="username" maxlength="10" required />
                 <p>Please enter your first name or the name you prefer to be called.</p>
                 <button type="submit">Continue</button>
             </form>
