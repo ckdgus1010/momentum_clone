@@ -8,10 +8,15 @@ body {
     flex-direction: column;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
 header button {
     margin: 20px 20px;
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: #fff;
     text-shadow: 1px 1px 2px #666;
@@ -32,6 +37,37 @@ header button:active {
     border-color: rgba(255, 255, 255, 0.6);
 }
 
+#weather {
+    margin: 20px;
+    padding-left: 6px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: 20px;
+    border: solid 2px #fff;
+    border-radius: 25px;
+}
+
+#weather img {
+    width: 42px;
+}
+
+#weather div {
+    display: flex;
+    gap: 0.8rem;
+}
+
+#weather span {
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 1px 1px 2px #666;
+}
+
 main {
     flex: 1;
 }
@@ -45,7 +81,7 @@ main {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .container {

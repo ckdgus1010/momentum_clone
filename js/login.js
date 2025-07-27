@@ -12,14 +12,14 @@ function showUsername(username) {
     greeting.innerText = `Hello! ${username}`;
     
     mainContainer.classList.remove(CLASS_HIDDEN);
-    changeNameBtn.classList.remove(CLASS_HIDDEN);
+    changeNameBtn.parentElement.classList.remove(CLASS_HIDDEN);
 
     loginForm.parentElement.classList.add(CLASS_HIDDEN);
 }
 
 function showLoginPanel() {
     mainContainer.classList.add(CLASS_HIDDEN);
-    changeNameBtn.classList.add(CLASS_HIDDEN);
+    changeNameBtn.parentElement.classList.add(CLASS_HIDDEN);
     
     loginForm.username.value = localStorage.getItem(KEY_USERNAME);
     loginForm.parentElement.classList.remove(CLASS_HIDDEN);
